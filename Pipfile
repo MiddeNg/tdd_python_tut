@@ -10,5 +10,4 @@ selenium = "<4"
 [dev-packages]
 
 [requires]
-python_version = "3.7"
-python_full_version = "3.7.9"
+python_version = "3.6"
