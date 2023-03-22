@@ -28,8 +28,8 @@ def _install_pipenv():
     run('pip install pipenv')  
 
 def _install_package_with_pipenv():
-    run(f'/home/{env.user}/.local/bin/pipenv install ')
-    run(f'/home/{env.user}/.local/bin/pipenv shell ')
+    run(f'/home/{env.user}/.local/bin/pipenv install --skip-lock')
+    run(f'/home/{env.user}/.local/bin/pipenv shell')
 
 def _create_or_update_dotenv():
     append('.env', 'DJANGO_DEBUG_FALSE=y')  
