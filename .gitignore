@@ -6,4 +6,5 @@ __pycache__
 *.pyc
 /static
 geckodriver
-github_token.txt.env
+github_token.txt
+.env
