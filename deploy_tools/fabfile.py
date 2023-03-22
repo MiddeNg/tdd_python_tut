@@ -29,7 +29,6 @@ def _install_pipenv():
 
 def _install_package_with_pipenv():
     run(f'/home/{env.user}/.local/bin/pipenv install --skip-lock')
-    run(f'/home/{env.user}/.local/bin/pipenv shell')
 
 def _create_or_update_dotenv():
     append('.env', 'DJANGO_DEBUG_FALSE=y')  
@@ -42,7 +41,7 @@ def _create_or_update_dotenv():
         append('.env', f'DJANGO_SECRET_KEY={new_secret}')
 
 def _update_static_files():
-    run('python manage.py collectstatic --noinput')  
+    run(f'/home/{env.user}/.local/bin/pipenv run python manage.py collectstatic --noinput')  
 
 def _update_database():
-    run('python manage.py migrate --noinput')
+    run(f'/home/{env.user}/.local/bin/pipenv run python manage.py migrate --noinput')
