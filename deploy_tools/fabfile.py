@@ -28,7 +28,7 @@ def _install_pipenv():
     run('pip install pipenv')  
 
 def _install_package_with_pipenv():
-    run(f'/home/{env.user}/.local/bin/pipenv install -r reqiurements.txt --skip-lock')
+    run(f'/home/{env.user}/.local/bin/pipenv install -r requirements.txt --skip-lock')
 
 def _create_or_update_dotenv():
     append('.env', 'DJANGO_DEBUG_FALSE=y')  
