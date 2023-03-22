@@ -4,10 +4,10 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "<1.12"
-selenium = "<4"
-gunicorn = "*"
-fabric3 = "*"
+django = "1.11.29"
+selenium = "3.141.0"
+gunicorn = "20.1.0"
+fabric3 = "1.14.post1"
 
 [dev-packages]
 
